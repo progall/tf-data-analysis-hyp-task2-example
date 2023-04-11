@@ -8,5 +8,5 @@ def solution(x: np.array, y: np.array) -> bool:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    return ks_2samp(x, y, alternative="less").pvalue < 0.01 # Ваш ответ, True или False
+    return ks_2samp(x, y, alternative="greater").pvalue < 0.01 # Ваш ответ, True или False
     #return cramervonmises_2samp(x, y).pvalue < 0.01 # Ваш ответ, True или False
